@@ -1,0 +1,111 @@
+body {
+    font-family: 'Comic Sans MS', cursive;
+    background: #000;
+    color: #fff;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+header {
+    padding: 20px;
+    border: 5px solid #fff;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+.painel {
+    border: 8px solid #000;
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 15px;
+    position: relative;
+}
+
+.balao {
+    background: #fff;
+    color: #000;
+    padding: 10px;
+    border-radius: 20px;
+    margin: 10px 0;
+    position: relative;
+    max-width: 300px;
+    display: inline-block;
+}
+
+.balao::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 20px;
+    border: 10px solid transparent;
+    border-top: 10px solid #fff;
+}
+
+img {
+    width: 200px;
+    height: 150px;
+    margin: 10px auto;
+    border: 2px solid #000;
+    display: block;
+}
+
+.nav {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.btn {
+    background: #4169e1;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border: 3px solid #fff;
+    border-radius: 10px;
+    margin: 0 10px;
+    display: inline-block;
+}
+
+.btn:hover {
+    background: #365899;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #333;
+    margin-top: 20px;
+}
+
+a { color: inherit; }
+
+/* Variações por Página */
+.capa-page header { background: #ff4500; }
+.capa-page .capa-container { background: #ff4500; border: 10px solid #fff; margin: 20px auto; padding: 20px; max-width: 600px; border-radius: 10px; }
+.capa-page .espaco-capa img { width: 200px; height: 300px; border: 8px solid #000; border-radius: 10px; }
+.capa-page .titulo-capa { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); background: rgba(0,0,0,0.7); color: #fff; padding: 10px; border-radius: 5px; font-size: 1.2em; font-weight: bold; }
+.capa-page .btn { background: #ff4500; border-color: #fff; }
+
+.pagina1 header, .pagina1 .painel, .pagina1 .btn { background: #4169e1; }
+.pagina1 .painel { background: #87ceeb; }
+
+.pagina2 header, .pagina2 .painel, .pagina2 .btn { background: #ff4500; }
+.pagina2 .painel { background: #ff6347; }
+
+.pagina3 header, .pagina3 .painel, .pagina3 .btn { background: #32cd32; }
+.pagina3 .painel { background: #90ee90; }
+
+.pagina4 header, .pagina4 .painel, .pagina4 .btn { background: #9932cc; }
+.pagina4 .painel { background: #dda0dd; }
+
+.pagina5 header { background: #ffd700; color: #000; border-color: #000; }
+.pagina5 .painel { background: #fffacd; color: #000; }
+.pagina5 .btn { background: #ffd700; color: #000; border-color: #000; }
